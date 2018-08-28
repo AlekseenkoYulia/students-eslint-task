@@ -8,5 +8,207 @@
   },
   "rules": {
     // TODO place rules here
+    //1
+    "brace-style": [
+      "error",
+      "1tbs"
+    ],
+    //2
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    //3
+    "comma-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    //4
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    //5
+    "computed-property-spacing": [
+      "error",
+      "never"
+    ],
+    //6
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    //7
+    "func-call-spacing": [
+      "error",
+      "always"
+    ],
+    //8
+    "func-names": [
+      "error",
+      "always"
+    ],
+    //9
+    "implicit-arrow-linebreak": [
+      "error",
+      "beside"
+    ],
+    //10
+    "indent": [
+      "error",
+      4
+    ],
+    //11
+    "keyword-spacing": [
+      "error",
+      {
+        "before":true,
+        "after":true
+      }
+    ],
+    //12
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignoreComments": true,
+        "ignoreStrings": true
+      }
+    ],
+    //13
+    "new-parens": [
+      "error"
+    ],
+    //14
+    "no-mixed-spaces-and-tabs": [
+      "error"
+    ],
+    //15
+    "no-multi-assign": [
+      "error"
+    ],
+    //16
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    //17
+    "no-new-object": [
+      "error"
+    ],
+    //18
+    "no-plusplus": [
+      "error"
+    ],
+    //19
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForInStatement",
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+      }
+    ],
+
+//    //20
+//    "no-spaced-func": [
+//      "error"
+//    ],
+
+    //21
+    "no-tabs": [
+      "error"
+    ],
+    //22
+    "no-underscore-dangle": [
+      "error"
+    ],
+    //23
+    "nonblock-statement-body-position": [
+      "error",
+      "beside"
+    ],
+
+    //24
+    "padded-blocks": [
+      "error",
+      {
+        "blocks": "never"
+      }
+    ],
+
+    //25
+    "quotes": [
+      "error",
+      "single"
+    ],
+
+    //26
+    "semi": [
+      "error",
+      "always"
+    ],
+
+    //27
+    "semi-spacing": [
+      "error", {
+        "before": false,
+        "after": true
+      }
+    ],
+
+    //28
+    "semi-style": [
+      "error",
+      "last"
+    ],
+
+    //29
+    "space-before-blocks": [
+      "error",
+      "always"
+    ],
+
+    //30
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "ignore",   //"never"
+        "asyncArrow": "always"
+      }
+    ],
+
+    //31
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+
+    //32
+    "space-infix-ops": [
+      "error"
+    ],
+
+    //33
+    "space-unary-ops": [
+      "error",
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
+
+    //34
+    "spaced-comment": [
+      "error",
+      "always"
+    ]
   }
 }
