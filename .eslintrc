@@ -30,7 +30,22 @@
     //4
     "comma-style": [
       "error",
-      "last"
+      "last",
+      {
+        "exceptions": {
+          "ArrayExpression": false,
+          "ArrayPattern": false,
+          "ArrowFunctionExpression": false,
+          "CallExpression": false,
+          "FunctionDeclaration": false,
+          "FunctionExpression": false,
+          "ImportDeclaration": false,
+          "ObjectExpression": false,
+          "ObjectPattern": false,
+          "VariableDeclaration": false,
+          "NewExpression": false
+        }
+      }
     ],
     //5
     "computed-property-spacing": [
@@ -42,11 +57,9 @@
       "error",
       "always"
     ],
+
     //7
-    "func-call-spacing": [
-      "error",
-      "always"
-    ],
+
     //8
     "func-names": [
       "error",
@@ -66,8 +79,8 @@
     "keyword-spacing": [
       "error",
       {
-        "before":true,
-        "after":true
+        "before": true,
+        "after": true
       }
     ],
     //12
@@ -115,11 +128,15 @@
         "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
       }
     ],
+    //20
+    //    "no-spaced-func": [
+    //      "error"
+    //    ],
 
-//    //20
-//    "no-spaced-func": [
-//      "error"
-//    ],
+    "func-call-spacing": [
+      "error",
+      "never"
+    ],
 
     //21
     "no-tabs": [
@@ -134,7 +151,6 @@
       "error",
       "beside"
     ],
-
     //24
     "padded-blocks": [
       "error",
@@ -142,60 +158,53 @@
         "blocks": "never"
       }
     ],
-
     //25
     "quotes": [
       "error",
       "single"
     ],
-
     //26
     "semi": [
       "error",
       "always"
     ],
-
     //27
     "semi-spacing": [
-      "error", {
+      "error",
+      {
         "before": false,
         "after": true
       }
     ],
-
     //28
     "semi-style": [
       "error",
       "last"
     ],
-
     //29
     "space-before-blocks": [
       "error",
       "always"
     ],
-
     //30
     "space-before-function-paren": [
       "error",
       {
         "anonymous": "always",
-        "named": "ignore",   //"never"
+        "named": "ignore",
+        //"never"
         "asyncArrow": "always"
       }
     ],
-
     //31
     "space-in-parens": [
       "error",
       "never"
     ],
-
     //32
     "space-infix-ops": [
       "error"
     ],
-
     //33
     "space-unary-ops": [
       "error",
@@ -204,7 +213,6 @@
         "nonwords": false
       }
     ],
-
     //34
     "spaced-comment": [
       "error",
